@@ -22,26 +22,26 @@ Route::post('siswa','SiswaController@create');
 Route::put('/siswa/{nis}','SiswaController@update');
 Route::delete('/siswa/{nis}','SiswaController@delete');
 
-//guru
-Route::get('guru','GuruController@index');
-Route::post('guru','GuruController@create');
-Route::put('/guru/{nip}','GuruController@update');
-Route::delete('/guru/{nip}','GuruController@delete');
+// //guru
+// Route::get('guru','GuruController@index');
+// Route::post('guru','GuruController@create');
+// Route::put('/guru/{nip}','GuruController@update');
+// Route::delete('/guru/{nip}','GuruController@delete');
 
-//kelas
-Route::get('kelas','KelasController@index');
-Route::post('kelas','KelasController@create');
-Route::put('/kelas/{kelas}','KelasController@update');
-Route::delete('/kelas/{kelas}','KelasController@delete');
+// //kelas
+// Route::get('kelas','KelasController@index');
+// Route::post('kelas','KelasController@create');
+// Route::put('/kelas/{kelas}','KelasController@update');
+// Route::delete('/kelas/{kelas}','KelasController@delete');
 
-//jenistabungan
-Route::get('JenisTabungan','JenisTabunganController@index');
-Route::post('JenisTabungan','JenisTabunganController@create');
-Route::put('/JenisTabungan/{id}','JenisTabunganController@update');
-Route::delete('/JenisTabungan/{id}','JenisTabunganController@delete');
+// //jenistabungan
+// Route::get('JenisTabungan','JenisTabunganController@index');
+// Route::post('JenisTabungan','JenisTabunganController@create');
+// Route::put('/JenisTabungan/{id}','JenisTabunganController@update');
+// Route::delete('/JenisTabungan/{id}','JenisTabunganController@delete');
 
-//transaksi
-Route::get('transaksi','TransaksiController@index');
-Route::post('transaksi','TransaksiController@create');
-Route::put('/transaksi/{idTransaksi}','TransaksiController@update');
-Route::delete('/transaksi/{id}','TransaksiController@delete');
+// //transaksi
+// Route::get('transaksi','TransaksiController@index');
+// Route::post('transaksi','TransaksiController@create');
+// Route::put('/transaksi/{id}','TransaksiController@update');
+// Route::delete('/transaksi/{id}','TransaksiController@delete');

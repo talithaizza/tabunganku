@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Transaksi;
 
 class TransaksiController extends Controller
 {
@@ -14,26 +15,26 @@ class TransaksiController extends Controller
     //index untuk create
     public function create(request $request){
         $transaksi = new Transaksi;
-        $transaksi->tarik = $request->tarik;
-        $transaksi->setor = $request->setor;
+        $transaksi->kode_transaksi = $request->kode_transaksi;
+        $transaksi->jenis_transaksi = $request->jenis_transaksi;
         $transaksi->save();
 
         return "Data Berhasil Dibuat!";
     }
     //index untuk update
-    public function update(request $request, $idTransaksi){
-        $tarik = $request->tarik;
-        $setor = $request->setor;
+    public function update(request $request, $id){
+        $kode_transaksi = $request->kode_transaksi;
+        $jenis_transaksi = $request->jenis_transaksi;
       
-        $transaksi = Transaksi::find($idTransaksi);
-        $transaksi->tarik = $tarik;
-        $transaksi->setor = $setor;
+        $transaksi = Transaksi::find($id);
+        $transaksi->kode_transaksi = $kode_transaksi;
+        $transaksi->jenis_transaksi = $jenis_transaksi;
         $transaksi->save();
 
         return "Data Berhasil Diubah!";
     }
-    public function delete($idTransaksi){
-        $transaksi = Transaksi::find($idTransaksi);
+    public function delete($id){
+        $transaksi = Transaksi::find($id);
         $transaksi->delete();
 
         return "Data Berhasil Dihapus!";
